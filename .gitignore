@@ -1,10 +1,8 @@
-// URLs
-Baekjoon Online Judge.url
-프로그래머스.url
-
 // excutable files
 exe_files_are_here/
 *.exe
 
 // VScode
 .vscode/
+
+// C++ file format
