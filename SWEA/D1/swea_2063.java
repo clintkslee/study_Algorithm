@@ -4,7 +4,7 @@ import java.util.*;
 
 public class swea_2063 {
     public static void main(String[] args) {
-        Vector<Integer> v = new Vector();
+        Vector<Integer> v = new Vector<>();
         Scanner scanner = new Scanner(System.in);
         int N = scanner.nextInt();
         for(int i=0; i<N; i++) {
