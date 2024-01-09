@@ -1,6 +1,5 @@
 package SWEA.D2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class swea_1204 {
@@ -14,17 +13,21 @@ public class swea_1204 {
             for(int j=0; j<101; j++) {
                 arr[j]=0;
             } 
+            inputTemp = scanner.nextInt();  // TC 번호
             for(int j=0; j<1000; j++) {
                 inputTemp = scanner.nextInt();
                 arr[inputTemp]++;
             }
-            scoreTemp=arr[100];
-            indexTemp=100;
-            for(int j=99; j>=0; j--) {
-                if(scoreTemp < arr[j])
-                    indexTemp=j;
+            scoreTemp=arr[0];
+            indexTemp=0;
+            for(int j=0; j<101; j++) {
+                if(scoreTemp <= arr[j]) {
+                    scoreTemp = arr[j];
+                    indexTemp = j;
+                }
             }
             System.out.println("#"+(i+1)+" "+indexTemp);
         }
+        scanner.close();
     }
 }
