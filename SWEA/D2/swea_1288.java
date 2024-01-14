@@ -18,6 +18,8 @@ public class swea_1288 {
             // 출력
             System.out.println("#"+(i+1)+" "+temp);
         }
+        scanner.close();
+    
     }
     static boolean checkArr(int[] arr, int N) {
         int number = N;
