@@ -13,38 +13,38 @@ public class swea_1234 {
     static List<Character> arr;
     public static void main(String[] args) throws IOException {
         // 입력
-        for(int i=0; i<10; ++i) {
+        for(int i=1; i<=10; ++i) {                  // TC = 10
             st = new StringTokenizer(br.readLine());
             String temp = st.nextToken();           // 길이
-            arr = st.nextToken().chars()
+            arr = st.nextToken().chars()            // 스트링 -> ArrayList<Character>
                     .mapToObj(c -> (char) c)
                     .collect(Collectors.toList());
-        System.out.println(arr);
         // 풀이
-        solution();
+            solution();
+            sb.append("#"+i+" ");
+            for(char c : arr)    sb.append(c);
+            sb.append("\n");
+        }
         // 출력
-        //bw.write(sb.toString());
-        //bw.flush();
+        bw.write(sb.toString());
+        bw.flush();
     }
 
     private static void solution() {
-        int idx1, idx2;
-        for(int i=0; i<10; ++i) {                       // TC = 10
-            for(int j=0; j<=arr.size()-2; ++j) {     // 배열 탐색 
-                if(arr.get(j)==arr.get(j+1)) {            // 동일 문자 2연속 시
-                    idx1 = j;                   
-                    idx2 = j+1;
-                    while(idx1>=0 && idx2 < arr.size() && arr.get(idx1)==arr.get(idx2)) {  // 번호쌍 삭제
-                        arr.get(idx1--) = 'x';
-                        arr[i][idx2++] = 'x';
-                    }
-                    j = idx2-2;                         // 다음 탐색 시작 위치 조정
+        int idx1, idx2;                   
+        for(int j=0; j<=arr.size()-2; ++j) {        // 배열 탐색 
+            if(arr.get(j)==arr.get(j+1)) {          // 동일 문자 2연속 시
+                idx1 = j;                   
+                idx2 = j+1;
+                while(idx1>=0 && idx2 < arr.size() && arr.get(idx1)==arr.get(idx2)) {  // 번호쌍 삭제
+                    arr.remove(idx1);
+                    arr.remove(idx1);
+                    idx2=idx1;
+                    idx1--;
                 }
+                if(idx1==-1)    j = idx1;                            // 다음 탐색 시작 위치 조정
+                else j = idx1-1;
             }
-            sb.append("#"+(i+1)+" ");
-            for(int j=0; j<arr[i].length; ++j)
-                if(arr[i][j]!='x') sb.append(arr[i][j]);
-            sb.append("\n");
         }
     }
     
