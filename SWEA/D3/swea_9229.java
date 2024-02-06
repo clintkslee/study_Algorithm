@@ -1,4 +1,4 @@
-package day7.problems;
+package SWEA.D3;
 
 import java.io.*;
 import java.util.*;
@@ -10,7 +10,7 @@ import java.util.*;
 * 요약
 * 한빈이가 들고 다닐 수 있는 과제들의 최대 무게 합 nC2
 */
-public class SW9229_한빈이와_Spot_Mart_이강산 {
+public class swea_9229 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;

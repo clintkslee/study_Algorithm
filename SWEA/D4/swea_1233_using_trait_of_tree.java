@@ -1,4 +1,4 @@
-package day7.problems;
+package SWEA.D4;
 
 import java.io.*;
 import java.util.*;
@@ -10,7 +10,7 @@ import java.util.*;
 * 요약
 * 트리로 주어진 수식이 유효한 지 검사
 */
-public class SW1233_사칙연산_유효성_검사_이강산_트리특성이용 {
+public class swea_1233_using_trait_of_tree {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;
