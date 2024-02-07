@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * 색종이가 덮힌 곳은 true 로 생각하여 겹친 부분 계산
  */
-public class JUN2563_색종이_이강산 {
+public class boj_2563 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;

@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * 노가다
  */
-public class JUN16935_배열돌리기3_이강산 {
+public class boj_16935 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;

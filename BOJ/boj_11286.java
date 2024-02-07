@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * 우선순위 큐 사용
  */
-public class JUN11286_절댓값_힙_이강산 {
+public class boj_11286 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringBuilder sb = new StringBuilder();
