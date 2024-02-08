@@ -8,11 +8,12 @@ public class swea_1234_stack {
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringTokenizer st;
     static StringBuilder sb = new StringBuilder();
+
     public static void main(String[] args) throws IOException {
         // 입력
         for(int i=1; i<=10; ++i) {                  // TC = 10
             st = new StringTokenizer(br.readLine());
-            String temp = st.nextToken();           // 길이
+            st.nextToken();                         // 길이
             String pw = st.nextToken();             // 암호
         // 풀이
             solution(pw, i);            

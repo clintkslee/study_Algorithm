@@ -15,7 +15,7 @@ public class swea_1234_list {
         // 입력
         for(int i=1; i<=10; ++i) {                  // TC = 10
             st = new StringTokenizer(br.readLine());
-            String temp = st.nextToken();           // 길이
+            st.nextToken();                         // 길이
             arr = st.nextToken().chars()            // 스트링 -> ArrayList<Character>
                     .mapToObj(c -> (char) c)
                     .collect(Collectors.toList());
