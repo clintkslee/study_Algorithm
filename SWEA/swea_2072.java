@@ -1,4 +1,4 @@
-package SWEA.D1;
+package SWEA;
 
 import java.util.Scanner;
 import java.util.Vector;

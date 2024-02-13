@@ -1,4 +1,4 @@
-week3 리뷰하고 커밋
+week3 리뷰하고 폴더로 이동
 
 import java.io.*;
 import java.util.*;

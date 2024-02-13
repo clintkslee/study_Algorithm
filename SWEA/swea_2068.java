@@ -1,4 +1,4 @@
-package SWEA.D1;
+package SWEA;
 
 import java.util.Collections;
 import java.util.Comparator;
