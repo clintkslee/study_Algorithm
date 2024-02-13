@@ -1,5 +1,11 @@
+<<<<<<< Updated upstream:BOJ/boj_7576.java
 package BOJ;
 
+=======
+week3 리뷰하고 커밋
+
+// package
+>>>>>>> Stashed changes:boj_7576.java
 import java.io.*;
 import java.util.*;
 import java.awt.Point;

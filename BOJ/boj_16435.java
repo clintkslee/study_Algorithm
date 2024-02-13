@@ -1,4 +1,4 @@
-package BOJ.S5;
+package BOJ;
 
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package BOJ;
+week3 리뷰하고 커밋
 
 import java.io.*;
 import java.util.*;
@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * BFS + 벽 부쉈는지 판단
  */
-public class boj_2206 {
+public class boj_2206_2 {
     static BufferedReader br= new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
     static StringTokenizer st;

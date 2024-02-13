@@ -1,4 +1,4 @@
-package BOJ;
+week3 리뷰하고 커밋
 
 import java.io.*;
 import java.util.*;
