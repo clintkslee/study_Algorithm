@@ -1,10 +1,10 @@
-package JO.G4;
+package JO;
 
 import java.io.*;
 import java.util.*;
 /*
  * 제목
- * <냉장고>
+ * <냉장고> G4
  * 링크
  * https://jungol.co.kr/problem/1828
  * 요약

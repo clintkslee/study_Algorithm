@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 /*
  * 제목
- * <동전 자판기(下)>
+ * <동전 자판기(下)> G2
  * 링크
  * https://jungol.co.kr/problem/1183
  * 요약
