@@ -1,4 +1,4 @@
-package JO.G2;
+package JO;
 
 import java.io.*;
 import java.util.*;
