@@ -46,12 +46,13 @@ public class swea_5215 {
         }
     }
  
+    // 바이너리 카운팅으로 powerset 구함
     private static void getBurgers() {
         bestBurgerTaste = -1;
         int cnt = 1<<N;   // subset 개수
         int tempTaste;
         int tempKcal;
-        for(int i=0; i<cnt; ++i) {
+        for(int i=0; i<cnt; ++i) {  
             tempTaste = 0;
             tempKcal = 0;
             for(int pos = 0; pos < N; pos++) {

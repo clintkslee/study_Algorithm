@@ -2,7 +2,16 @@ package SWEA;
 
 import java.io.*;
 import java.util.*;
- 
+/*
+ * 제목
+ * <암호생성기> D3
+ * 링크
+ * https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14uWl6AF0CFAYD
+ * 요약
+ * 주어진 로직을 수행하는 코드 작성
+ * 풀이
+ * 큐 + 시뮬레이션
+ */
 public class swea_1225 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

@@ -2,7 +2,16 @@ package BOJ;
 
 import java.io.*;
 import java.util.*;
-
+/*
+ * 제목
+ * <테트로미노> G4
+ * 링크
+ * https://www.acmicpc.net/problem/14500
+ * 요약
+ * 주어진 배열을 테트로미노로 덮을 때 덮힌 부분 합의 최대값
+ * 풀이
+ * 4칸 도형 dfs, T도형 따로 체크
+ */
 public class boj_14500 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
