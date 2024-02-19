@@ -82,7 +82,8 @@ public class boj_14502 {
 		}
 		return arr;
 	}
-	
+
+	// 바이러스 확산
 	private static void spreadVirus(int[][] temp) {
 		Queue<Point> q = new ArrayDeque<>();
 		for(int i=0; i<N; i++) {
@@ -106,6 +107,7 @@ public class boj_14502 {
 		}	
 	}
 
+	// 0 개수 세기
 	private static int count(int[][] temp) {
 		int result = 0;
 		for(int i=0; i<N; i++) {
