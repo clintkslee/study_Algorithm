@@ -1,15 +1,17 @@
 package BOJ;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.StringTokenizer;
-
+import java.io.*;
+import java.util.*;
+/*
+ * 제목
+ * <암호 만들기> G5
+ * 링크
+ * https://www.acmicpc.net/problem/1759
+ * 요약
+ * 주어진 문자들로 길이 L인 문자열 생성 후 조건에 맞는 지 확인후 출력
+ * 풀이
+ * 조합
+ */
 public class boj_1759 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
