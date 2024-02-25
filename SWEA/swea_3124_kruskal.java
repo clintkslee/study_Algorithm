@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * 유니온 파인드, 크루스칼
  */
-public class swea_3124 {
+public class swea_3124_kruskal {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;
