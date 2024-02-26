@@ -12,7 +12,7 @@ import java.util.*;
  * 풀이
  * BFS
  */
-public class boj_2606_월말1번_제출 {
+public class boj_2606 {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;
