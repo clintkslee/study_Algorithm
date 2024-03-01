@@ -24,6 +24,7 @@ public class boj_2606 {
 	static boolean visited[];
 	static int cnt = 0;
 	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
 		// 사람 수 		
 		N = Integer.parseInt(br.readLine());

@@ -23,6 +23,7 @@ public class boj_1941 {
 	static char[] student; // S or Y
 	static ArrayList<Integer>[] list; // 인접리스트
 
+	@SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException {
     	// 노드 
     	student = new char[26]; // [0] 제외

@@ -41,6 +41,7 @@ public class boj_1753_pq {
 	static int[] distance; // 정점i까지의 거리 [i]
 	
 	
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) throws IOException {
 		// 입력
     	st = new StringTokenizer(br.readLine());
