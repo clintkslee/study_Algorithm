@@ -28,6 +28,7 @@ public class boj_12100 {
 	static Queue<Integer>[] q;
 	static int maxVal = 0;
 
+	@SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException {
 		// 입력
     	N = Integer.parseInt(br.readLine());
