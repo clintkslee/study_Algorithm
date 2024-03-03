@@ -1,4 +1,4 @@
-package algo_group_study;
+package BOJ;
 
 import java.io.*;
 import java.util.*;
