@@ -29,6 +29,7 @@ public class boj_1325 {
     static int[] res; // 결과 출력용
     static int pos = 0, cur = 0, cnt = 0; // 결과 시작 위치, 삽입 위치, 결과 개수
 
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException {
         // 입력
         st = new StringTokenizer(br.readLine());
