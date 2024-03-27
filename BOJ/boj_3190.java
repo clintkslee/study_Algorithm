@@ -1,7 +1,8 @@
-package algo_group_study;
+package BOJ;
 
 import java.io.*;
 import java.util.*;
+
 /*
  * 제목
  * <뱀> G4
@@ -22,18 +23,20 @@ public class boj_3190 {
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;
 	static StringBuilder sb = new StringBuilder();
-	
-	static class Pos{
+
+	static class Pos {
 		int y, x;
+
 		public Pos(int y, int x) {
 			this.y = y;
 			this.x = x;
 		}
 	}
-	
+
 	static class ChangeDir {
 		int tic; // 초
 		char c; // 좌, 우로 방향 전환
+
 		public ChangeDir(int tic, char c) {
 			this.tic = tic;
 			this.c = c;
@@ -44,36 +47,36 @@ public class boj_3190 {
 	static int K; // 사과 개수 K
 	static int[][] arr; // 보드 (좌상단 [1][1])
 	static int L; // 뱀의 방향 전환 횟수 L
-	
+
 	static int dir = 0; // 뱀의 이동 방향
-	static int[] dy = {0, 1, 0, -1}; // 우하좌상
-	static int[] dx = {1, 0, -1, 0};
-	static Deque<Pos> snake = new ArrayDeque<>(); 
+	static int[] dy = { 0, 1, 0, -1 }; // 우하좌상
+	static int[] dx = { 1, 0, -1, 0 };
+	static Deque<Pos> snake = new ArrayDeque<>();
 	static Queue<ChangeDir> change = new ArrayDeque<>();
-	
-    public static void main(String[] args) throws IOException {
+
+	public static void main(String[] args) throws IOException {
 		// 입력
-    	N=Integer.parseInt(br.readLine());
-    	K=Integer.parseInt(br.readLine());
-    	arr = new int[N+1][N+1];
-    	for(int i=0; i<K; i++) {
-    		st = new StringTokenizer(br.readLine());
-    		int y = Integer.parseInt(st.nextToken());
-    		int x = Integer.parseInt(st.nextToken());
-    		arr[y][x]=2; // 2=사과
-    	}
-    	L = Integer.parseInt(br.readLine());
-    	for(int i=0; i<L; i++) {
-    		st = new StringTokenizer(br.readLine());
-    		int tic = Integer.parseInt(st.nextToken());
-    		char c = st.nextToken().charAt(0);
-    		change.offer(new ChangeDir(tic, c));
-    	}
+		N = Integer.parseInt(br.readLine());
+		K = Integer.parseInt(br.readLine());
+		arr = new int[N + 1][N + 1];
+		for (int i = 0; i < K; i++) {
+			st = new StringTokenizer(br.readLine());
+			int y = Integer.parseInt(st.nextToken());
+			int x = Integer.parseInt(st.nextToken());
+			arr[y][x] = 2; // 2=사과
+		}
+		L = Integer.parseInt(br.readLine());
+		for (int i = 0; i < L; i++) {
+			st = new StringTokenizer(br.readLine());
+			int tic = Integer.parseInt(st.nextToken());
+			char c = st.nextToken().charAt(0);
+			change.offer(new ChangeDir(tic, c));
+		}
 		// 풀이
-    	System.out.println((-1)%4);
-    	 System.out.println((-10)%(-4));
-    	 System.out.println(10%(-4));
-        //	playDummy();
+		System.out.println((-1) % 4);
+		System.out.println((-10) % (-4));
+		System.out.println(10 % (-4));
+		// playDummy();
 		// 출력;
 		bw.write(sb.toString());
 		bw.flush();
@@ -84,29 +87,29 @@ public class boj_3190 {
 		arr[1][1] = 1;
 		snake.offer(new Pos(1, 1)); // 시작 위치 초기화
 		ChangeDir c = change.poll();
-		while(true) {
+		while (true) {
 			time++;
 			Pos p = snake.peek();
-			int ny = p.y+dy[dir];
-			int nx = p.x+dx[dir];
-			if(!isValidPos(ny, nx)) {
+			int ny = p.y + dy[dir];
+			int nx = p.x + dx[dir];
+			if (!isValidPos(ny, nx)) {
 				break;
 			}
 			snake.addFirst(new Pos(ny, nx));
-			if(arr[ny][nx]!=2) {
+			if (arr[ny][nx] != 2) {
 				Pos t = snake.pollLast();
 				arr[t.y][t.x] = 0;
 			}
 			arr[ny][nx] = 1;
-			if(time==c.tic) {
-				if(c.c=='L') { // 좌회전
-					dir = dir-1;
-					if(dir==-1) dir = 3;
+			if (time == c.tic) {
+				if (c.c == 'L') { // 좌회전
+					dir = dir - 1;
+					if (dir == -1)
+						dir = 3;
+				} else { // 우회전
+					dir = (dir + 1) % 4;
 				}
-				else { // 우회전 
-					dir = (dir+1)%4;
-				}
-				if(!change.isEmpty()) {
+				if (!change.isEmpty()) {
 					c = change.poll();
 				}
 			}
@@ -115,9 +118,12 @@ public class boj_3190 {
 	}
 
 	private static boolean isValidPos(int ny, int nx) {
-		if(1<=ny && ny<=N && 1<=nx && nx<=N) { // 범위 내
-			if(arr[ny][nx]==1) return false; // 자기 몸에 박은 경우
-			else return true; // 빈 공간 또는 사과
-		} else return false; // 범위 외
+		if (1 <= ny && ny <= N && 1 <= nx && nx <= N) { // 범위 내
+			if (arr[ny][nx] == 1)
+				return false; // 자기 몸에 박은 경우
+			else
+				return true; // 빈 공간 또는 사과
+		} else
+			return false; // 범위 외
 	}
 }
