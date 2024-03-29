@@ -76,7 +76,7 @@ public class boj_3190 {
 		System.out.println((-1) % 4);
 		System.out.println((-10) % (-4));
 		System.out.println(10 % (-4));
-		// playDummy();
+		playDummy();
 		// 출력;
 		bw.write(sb.toString());
 		bw.flush();
