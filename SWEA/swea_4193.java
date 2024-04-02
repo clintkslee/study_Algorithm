@@ -68,6 +68,8 @@ public class swea_4193 {
 			bfs();
 
 			// 출력
+			if (minTime == Integer.MAX_VALUE)
+				minTime = -1;
 			sb.append("#").append(tc).append(" ").append(minTime).append("\n");
 		}
 		bw.write(sb.toString());
@@ -107,7 +109,7 @@ public class swea_4193 {
 						q.offer(new Pos(cur.i, cur.j, cur.time + 1));
 					}
 				}
-				if(arr[ni][nj] == 0) {
+				if (arr[ni][nj] == 0) {
 					vis[ni][nj] = curTime + 1;
 					q.offer(new Pos(ni, nj, curTime + 1));
 				}
