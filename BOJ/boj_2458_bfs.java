@@ -14,7 +14,7 @@ import java.util.*;
 * 풀이
 * BFS
 */
-public class boj_2458 {
+public class boj_2458_bfs {
 	static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 	static StringTokenizer st;
@@ -78,7 +78,7 @@ public class boj_2458 {
 				cnt++;
 		}
 		// 출력
-		bw.write(cnt+"");
+		bw.write(cnt + "");
 		bw.flush();
 	}
 
