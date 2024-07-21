@@ -1,8 +1,0 @@
-// excutable files
-exe_files_are_here/
-*.exe
-
-// VScode
-.vscode/
-
-// C++ file format
