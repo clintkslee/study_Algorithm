@@ -25,8 +25,10 @@ public class boj_0000 {
     static StringBuilder sb = new StringBuilder();
     
     public static void main(String[] args) throws IOException {
-    	// 입력
-    	
+    	// 초기화 
+        
+        // 입력
+
     	// 풀이
 
     	// 출력
